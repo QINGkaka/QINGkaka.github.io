@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+    <style type="text/css"></style>
+</head>
+
+<body>
+    <div class="home">
+        <div class="content">
+            <div class="stars"></div>
+            <img class="bgc" src="./img/night.jpg" width="100%" alt="">
+            <h3 class="title">今天12月24日，是郭云霄大美女的生日</h3>
+            <h3 class="titles">！！让我们祝她生日快乐！！</h3>
+            <img class="icon" src="./img/yunxiao1.jpg" alt="">
+            <div class='ribbon'>
+                <a href='./index.html'><span>美美的首页好看不</span></a>
+                <a href='./about.html'><span>想说的话在这里啦</span></a>
+            </div>
+
+        </div>
+        <div class="icons">
+            <div class="icons_items">
+                <img class="icons_items_imgs" src="./img/yunxiao3.jpg" alt="">
+                <span>我宣布，这张最好看</span>
+            </div>
+            <div class="icons_items">
+                <img class="icons_items_imgs" src="./img/yunxiao7.jpg" alt="">
+                <span>为了拍照努力努力</span>
+            </div>
+            <div class="icons_items">
+                <img class="icons_items_imgs" src="./img/yunxiao2.jpg" alt="">
+                <span>美女你谁？</span>
+            </div>
+            <div class="icons_items">
+                <img class="icons_items_imgs" src="./img/x2.jpg" alt="">
+                <span>只是穿着防晒服和帽子也很有气质</span>
+            </div>
+        </div>
+        <div class="introduce">
+            <div class="introduce_item">
+                <img class="introduce_item_img" src="./img/1.1.jpg" alt="">
+                <span class="introduce_item_title">首先映入眼帘的是一张美美的自拍。要我说，你属第一好看。
+                    所以要自信呀~既有绮丽夺目的外表，又有丰盈平和的内心，谁能比你更完美？！
+                </span>
+
+            </div>
+            <div class="introduce_item">
+                <span class="introduce_item_titles">氛围感拉满的一张~世界上真的存在这么浓密黝黑光滑的秀发嘛？~
+                </span>
+                <img class="introduce_item_img" src="./img/1.2.jpg" alt="">
+            </div>
+            <div class="introduce_item">
+                <img class="introduce_item_img" src="./img/1.3.jpg" alt="">
+                <span class="introduce_item_title">记得著名的哲学家“沃兹基硕德”曾经说过：拍照拍一半，看了还想看；
+                    哈哈，这说明你已经熟练掌握了拍照的要义。</span>
+            </div>
+            <div class="introduce_item">
+                <span class="introduce_item_titles">这张~我知道我知道！在青岛拍的啦~
+                    读万卷书，行万里路。用步履丈量脚下的土地，用行动感受世界的美好。这意味着你已经get到世界公民的乐趣啦~
+                    从南京，到连云港；从青岛，到长沙；从上海，到西安.....不知不觉中，你已经涉足了祖国这么多美好的城市和山水啦~
+                    读书可以使人充盈，而旅行可以滋养心灵。见到更多的风土人情，自然心胸会更包容，更有一种根植万里土壤成长的富饶感。
+                    新的一岁，新的一年，希望你能去到更广阔的舞台，见识更大的世界~</span>
+                <img class="introduce_item_img" src="./img/1.4.jpg" alt="">
+            </div>
+        </div>
+        <audio autoplay="autoplay" id="audio" loop="loop">
+            <source src="./img/happy.mp4" type="audio/MP3">
+
+        </audio>
+
+    </div>
+
+</body>
+<script>
+    let mucics = document.getElementById('audio')
+    document.body.addEventListener('mousemove', function () {
+        setTimeout(() => {
+            mucics.play();
+        }, 2000);
+    }, false);
+</script>
+
+</html>
