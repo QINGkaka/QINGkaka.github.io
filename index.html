@@ -3,187 +3,139 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>QINGKAKA</title>
+  <title>QINGkaka</title>
   <meta
     name="description"
-    content="QINGKAKA 的个人主页：一个偏实验感、少文字、重氛围与交互的静态网站。"
+    content="QINGkaka 的个人主页。简洁、清爽，放一些项目入口和联系方式。"
   >
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap"
     rel="stylesheet"
   >
   <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-  <canvas id="starfield" aria-hidden="true"></canvas>
-  <div class="page-glow" aria-hidden="true"></div>
-  <div class="noise" aria-hidden="true"></div>
+  <div class="bg-orb bg-orb-a" aria-hidden="true"></div>
+  <div class="bg-orb bg-orb-b" aria-hidden="true"></div>
 
-  <header class="topbar">
-    <a class="brand" href="#top">QINGKAKA</a>
-    <nav class="nav">
-      <a href="#projects">Projects</a>
-      <a href="#fragments">About</a>
-      <a href="#links">Contact</a>
+  <header class="site-header">
+    <a class="logo" href="#top">QINGkaka</a>
+    <nav class="site-nav">
+      <a href="#projects">项目</a>
+      <a href="#about">关于</a>
+      <a href="#contact">联系</a>
     </nav>
   </header>
 
-  <main id="top">
-    <section class="hero reveal">
+  <main class="page" id="top">
+    <section class="hero">
       <div class="hero-copy">
-        <p class="eyebrow">QINGKAKA / PERSONAL SITE</p>
-        <h1>
-          QING
-          <span>KAKA</span>
-          .IO
-        </h1>
+        <p class="hero-kicker">Personal Homepage</p>
+        <h1>你好，我是 QINGkaka。</h1>
         <p class="hero-text">
-          把代码、界面和灵感，做成轻量但有记忆点的页面。这里会慢慢长成一个更像我自己的数字据点。
+          喜欢做一点前端、一点界面、一些小而有趣的东西。
+          这个主页会慢慢收纳我的项目、想法和正在发生的尝试。
         </p>
         <div class="hero-actions">
-          <a class="button button-primary magnetic" href="#projects">View Projects</a>
-          <a
-            class="button button-ghost magnetic"
-            href="mailto:2220294086@qq.com"
-          >
-            Contact Me
+          <a class="button button-primary" href="https://github.com/QINGkaka" target="_blank" rel="noreferrer">
+            去 GitHub
           </a>
+          <a class="button button-secondary" href="mailto:2220294086@qq.com">
+            发邮件
+          </a>
+        </div>
+        <div class="hero-tags">
+          <span>前端练习</span>
+          <span>页面实验</span>
+          <span>个人小工具</span>
         </div>
       </div>
 
-      <aside class="hero-stack">
-        <article class="glass-card profile-card tilt-card">
-          <p class="card-label">PROFILE</p>
-          <div class="profile-head">
-            <img
-              class="avatar"
-              src="https://github.com/QINGkaka.png?size=240"
-              alt="QINGkaka GitHub avatar"
-            >
-            <div>
-              <h2>QINGkaka</h2>
-              <p class="card-note">Builder in progress. Front-end, experiments, personal tools.</p>
-            </div>
-          </div>
-          <div class="tag-row">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-          </div>
-        </article>
-
-        <article class="glass-card time-card tilt-card">
-          <p class="card-label">LOCAL TIME</p>
-          <p class="time-value" id="timeValue">--:--:--</p>
-          <p class="card-note">UTC+8 / Shanghai</p>
-        </article>
-
-        <article class="glass-card contact-card tilt-card">
-          <p class="card-label">CONTACT</p>
-          <div class="contact-list">
-            <a href="https://github.com/QINGkaka" target="_blank" rel="noreferrer">github.com/QINGkaka</a>
-            <a href="mailto:2220294086@qq.com">2220294086@qq.com</a>
-          </div>
-          <p class="card-note">如果你想看项目、交流想法，或者只是路过打个招呼，都可以。</p>
-        </article>
-      </aside>
-
-      <div class="satellite satellite-a">personal</div>
-      <div class="satellite satellite-b">interactive</div>
-      <div class="satellite satellite-c">in progress</div>
-    </section>
-
-    <section class="panel reveal" id="projects">
-      <div class="section-head">
-        <p class="section-index">01</p>
-        <h2>Projects</h2>
-      </div>
-
-      <div class="project-grid" id="projectList" aria-live="polite">
-        <article class="project-card project-placeholder">
-          <p class="card-label">LOADING</p>
-          <h3>Fetching repositories...</h3>
-          <p>正在从 GitHub 拉取公开项目。</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="panel strip reveal">
-      <div class="strip-track">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>Motion</span>
-        <span>Atmosphere</span>
-        <span>Interaction</span>
-        <span>Static but alive</span>
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>Motion</span>
-        <span>Atmosphere</span>
-        <span>Interaction</span>
-        <span>Static but alive</span>
-      </div>
-    </section>
-
-    <section class="panel reveal" id="fragments">
-      <div class="section-head">
-        <p class="section-index">02</p>
-        <h2>About</h2>
-      </div>
-
-      <div class="fragments-grid">
-        <article class="fragment fragment-large tilt-card">
-          <p class="card-label">MINDSET</p>
-          <h3>Curious, visual, still learning.</h3>
-          <p>喜欢把一个普通页面，往更好看、更顺手、更有气氛的方向推一点。</p>
-        </article>
-
-        <article class="fragment tilt-card">
-          <p class="card-label">FOCUS</p>
-          <h3>Small builds</h3>
-          <p>先做出能上线、能表达、能继续迭代的版本。</p>
-        </article>
-
-        <article class="fragment tilt-card">
-          <p class="card-label">STYLE</p>
-          <h3>Less text, more feel</h3>
-          <p>少一点解释，多一点视觉和交互本身的说服力。</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="panel reveal" id="links">
-      <div class="section-head">
-        <p class="section-index">03</p>
-        <h2>Contact</h2>
-      </div>
-
-      <div class="links-panel">
-        <a
-          class="link-tile magnetic"
-          href="https://github.com/QINGkaka"
-          target="_blank"
-          rel="noreferrer"
+      <aside class="profile-card">
+        <img
+          class="avatar"
+          src="https://github.com/QINGkaka.png?size=240"
+          alt="QINGkaka GitHub avatar"
         >
-          <span class="link-kicker">01</span>
-          <strong>GitHub</strong>
+        <div class="profile-copy">
+          <p class="card-kicker">Profile</p>
+          <h2>QINGkaka</h2>
+          <p>目前把这里当作个人主页的起点，先保持清爽，再慢慢长内容。</p>
+        </div>
+        <dl class="profile-meta">
+          <div>
+            <dt>时区</dt>
+            <dd>UTC+8</dd>
+          </div>
+          <div>
+            <dt>邮箱</dt>
+            <dd>2220294086@qq.com</dd>
+          </div>
+          <div>
+            <dt>主页</dt>
+            <dd>github.io</dd>
+          </div>
+        </dl>
+      </aside>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-head">
+        <p class="section-kicker">Projects</p>
+        <h2>几个入口</h2>
+      </div>
+
+      <div class="card-grid">
+        <a class="panel-card" href="https://github.com/QINGkaka" target="_blank" rel="noreferrer">
+          <p class="card-kicker">01</p>
+          <h3>GitHub</h3>
+          <p>所有公开仓库都在这里，后面也会继续从这里往主页里挑选内容。</p>
         </a>
-        <a class="link-tile magnetic" href="mailto:2220294086@qq.com">
-          <span class="link-kicker">02</span>
-          <strong>Email</strong>
+
+        <article class="panel-card">
+          <p class="card-kicker">02</p>
+          <h3>这个主页</h3>
+          <p>现在先做成简洁版，后续再补项目页、作品展示和更细一点的个人介绍。</p>
+        </article>
+
+        <a class="panel-card" href="mailto:2220294086@qq.com">
+          <p class="card-kicker">03</p>
+          <h3>联系我</h3>
+          <p>如果你想交流网页、项目、想法，或者只是打个招呼，都可以发邮件。</p>
         </a>
-        <a class="link-tile magnetic" href="#top">
-          <span class="link-kicker">03</span>
-          <strong>Back to top</strong>
-        </a>
+      </div>
+    </section>
+
+    <section class="section split" id="about">
+      <div class="section-head">
+        <p class="section-kicker">About</p>
+        <h2>我想把这里做成什么</h2>
+      </div>
+
+      <div class="split-grid">
+        <article class="note-card">
+          <h3>少一点花哨，多一点气质。</h3>
+          <p>不是堆很多炫技效果，而是让页面看起来舒服、干净，而且有自己的味道。</p>
+        </article>
+
+        <article class="note-card">
+          <h3>先真实，再完整。</h3>
+          <p>先放真实的入口和正在做的东西，之后再慢慢补作品、经历和更多页面。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="contact-strip">
+        <div>
+          <p class="section-kicker">Contact</p>
+          <h2>2220294086@qq.com</h2>
+        </div>
+        <a class="button button-primary" href="mailto:2220294086@qq.com">现在联系</a>
       </div>
     </section>
   </main>
-
-  <script src="./js/index.js"></script>
 </body>
 </html>
