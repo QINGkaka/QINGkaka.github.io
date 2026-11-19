@@ -1,6 +1,6 @@
 window.SITE_CONFIG = {
   "paperUrl": "https://arxiv.org/abs/2610.34593",
-  "codeUrl": "https://github.com/QINGkaka/world-modeling-action-learning",
+  "codeUrl": "https://github.com/QINGkaka/training-only-video-supervision",
   "authors": [
     {
       "name": "Hanwen Cui",
